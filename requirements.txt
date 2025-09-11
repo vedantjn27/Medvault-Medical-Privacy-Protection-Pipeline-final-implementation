@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+pillow
+pdfplumber
+pytesseract
+paddleocr
+spacy
+torch
+transformers
+opencv-python
+pydicom
+python-docx
+openpyxl
+pandas
+numpy

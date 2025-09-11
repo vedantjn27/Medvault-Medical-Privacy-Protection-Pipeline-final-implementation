@@ -1,0 +1,36 @@
+{
+  "Patient": {
+    "PatientID": "123456",
+    "PatientName": "John Doe",
+    "PatientBirthDate": "1980-05-15",
+    "PatientSex": "M"
+  },
+  "Encounter": {
+    "EncounterID": "ENC7890",
+    "AdmissionDate": "2024-08-01",
+    "DischargeDate": "2024-08-15",
+    "Type": "Inpatient"
+  },
+  "Documents": [
+    {
+      "DocumentID": "DOC1001",
+      "DocumentType": "DischargeSummary",
+      "Content": "Patient admitted for chest pain. Diagnosed with acute coronary syndrome. Prescribed medication and follow-up in 2 weeks."
+    },
+    {
+      "DocumentID": "DOC1002",
+      "DocumentType": "LabReport",
+      "Content": "Blood Test: Hemoglobin 13.5 g/dL, WBC 7.2 x10^9/L. All values within normal range."
+    },
+    {
+      "DocumentID": "DOC1003",
+      "DocumentType": "InsuranceClaim",
+      "Content": "Claim submitted for inpatient hospitalization. Claim Amount: 120000 INR. Status: Pending."
+    },
+    {
+      "DocumentID": "DOC1004",
+      "DocumentType": "ConsentForm",
+      "Content": "Patient has given informed consent for angioplasty procedure."
+    }
+  ]
+}

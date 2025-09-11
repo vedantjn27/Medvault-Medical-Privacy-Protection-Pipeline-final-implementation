@@ -1,0 +1,169 @@
+/* Apply MedVault design tokens, fonts, and chart palette per design brief */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Light mode tokens (from design brief) */
+:root {
+  --background: #ffffff; /* main background */
+  --foreground: #374151; /* primary text (gray-700) */
+
+  --card: #f3f4f6; /* gray-200 card bg */
+  --card-foreground: #374151;
+
+  --popover: #ffffff;
+  --popover-foreground: #374151;
+
+  --primary: #1e3a8a; /* blue-800 */
+  --primary-foreground: #ffffff;
+
+  --secondary: #f3f4f6; /* soft neutral */
+  --secondary-foreground: #374151;
+
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280; /* gray-500 */
+
+  --accent: #4caf50; /* success/positive */
+  --accent-foreground: #ffffff;
+
+  --destructive: #f44336; /* error/risk */
+  --destructive-foreground: #ffffff;
+
+  --border: #e5e7eb; /* gray-200/300 */
+  --input: #ffffff;
+  --ring: rgba(30, 58, 138, 0.5); /* focus ring using primary */
+
+  /* Chart palette (from design brief) */
+  --chart-1: #1e3a8a; /* primary */
+  --chart-2: #4caf50; /* accent/success */
+  --chart-3: #f44336; /* destructive/risk */
+  --chart-4: #fbbf24; /* amber-400 */
+  --chart-5: #3b82f6; /* blue-500 */
+
+  --radius: 0.5rem;
+
+  /* Optional sidebar tokens mapped to neutrals/primary */
+  --sidebar: #f3f4f6;
+  --sidebar-foreground: #374151;
+  --sidebar-primary: #1e3a8a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #4caf50;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: rgba(30, 58, 138, 0.5);
+}
+
+/* Dark mode tokens (aligned to brief’s intent: calm, high contrast) */
+.dark {
+  --background: #111827; /* gray-900 */
+  --foreground: #f9fafb; /* gray-50 */
+
+  --card: #1f2937; /* gray-800 */
+  --card-foreground: #f9fafb;
+
+  --popover: #111827;
+  --popover-foreground: #f9fafb;
+
+  --primary: #3b82f6; /* brighter in dark for contrast */
+  --primary-foreground: #0b1220;
+
+  --secondary: #1f2937;
+  --secondary-foreground: #f3f4f6;
+
+  --muted: #1f2937;
+  --muted-foreground: #9ca3af; /* gray-400 */
+
+  --accent: #22c55e; /* green-500 for clarity on dark */
+  --accent-foreground: #052e11;
+
+  --destructive: #ef4444; /* red-500 */
+  --destructive-foreground: #2a0a0a;
+
+  --border: #374151; /* gray-700 */
+  --input: #111827;
+  --ring: rgba(59, 130, 246, 0.55); /* based on primary (blue-500) */
+
+  --chart-1: #3b82f6;
+  --chart-2: #22c55e;
+  --chart-3: #ef4444;
+  --chart-4: #f59e0b;
+  --chart-5: #60a5fa;
+
+  --sidebar: #0f172a; /* slate-900 */
+  --sidebar-foreground: #e5e7eb;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #0b1220;
+  --sidebar-accent: #22c55e;
+  --sidebar-accent-foreground: #052e11;
+  --sidebar-border: #1f2937;
+  --sidebar-ring: rgba(59, 130, 246, 0.55);
+}
+
+@theme inline {
+  /* Map Next.js font variables to Tailwind tokens */
+  --font-sans: var(--font-open-sans);
+  --font-mono: var(--font-open-sans); /* keep only 2 families total per brief */
+
+  /* Keep semantic color design tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Use Work Sans for headings per brief */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-work-sans), var(--font-open-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+      Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+}
