@@ -1,0 +1,27 @@
+Download the zip and extract the folder from git
+
+For backend: "cd backend" in the cmd prompt
+Install all the libraries and modules in requirements.txt 
+Login to twirlio, get required credentials and create .env
+
+For SpaCy, you’ll also need to download a language model 
+"python -m spacy download en_core_web_sm"
+
+For pdf2image, you’ll need poppler installed in your system
+
+For frontend : "cd frontend" in the cmd prompt
+npm install
+npm install next react react-dom
+npm install -D typescript @types/react @types/node
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install @radix-ui/react-icons lucide-react class-variance-authority tailwind-variants
+npm install recharts
+npm install clsx
+npm install axios
+
+After all this run the server i.e. run main.py(backend)
+do "cd frontend"
+npm run dev 
+
+

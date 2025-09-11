@@ -1,17 +1,43 @@
 fastapi
 uvicorn
-pydantic
 python-multipart
-pillow
-pdfplumber
-pytesseract
-paddleocr
-spacy
-torch
-transformers
+
+# Image processing
 opencv-python
+numpy
+Pillow
+
+# OCR
+pytesseract
+
+# PDF and document parsing
+pdfplumber
+pdf2image
 pydicom
 python-docx
-openpyxl
+PyMuPDF
+reportlab
+
+# NLP
+spacy
+
+# Data handling
 pandas
-numpy
+
+# HTTP client
+httpx
+
+# Environment variables
+python-dotenv
+
+# Database
+SQLAlchemy
+
+# Twilio for SMS/alerts
+twilio
+
+# Async
+asyncio
+
+# Extra utils
+uuid
