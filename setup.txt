@@ -1,7 +1,8 @@
+To run locally:
 Download the zip and extract the folder from git
 
 For backend: "cd backend" in the cmd prompt
-Install all the libraries and modules in requirements.txt 
+Install all the libraries and modules present in "requirements.txt"
 Login to twirlio, get required credentials and create .env
 
 For SpaCy, you’ll also need to download a language model 
@@ -24,4 +25,5 @@ After all this run the server i.e. run main.py(backend)
 do "cd frontend"
 npm run dev 
 
-
+Deployed Version : 
+Go to : https://medvault-medical-privacy-protection-pipeline-final-adm7pemqz.vercel.app/
