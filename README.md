@@ -86,3 +86,5 @@ For frontend : "cd frontend" in the cmd prompt npm install npm install next reac
 After all this run the server i.e. run main.py(backend) do "cd frontend" npm run dev
 
 Deployed Version : Go to : https://medvault-medical-privacy-protection-pipeline-final-adm7pemqz.vercel.app/
+
+"Privacy is not a barrier to Progress, It is the Foundation of Trust in Healthcare"
