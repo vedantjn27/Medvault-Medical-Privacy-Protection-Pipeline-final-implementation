@@ -83,7 +83,19 @@ For pdf2image, you’ll need poppler installed in your system
 
 For frontend : "cd frontend" in the cmd prompt npm install npm install next react react-dom npm install -D typescript @types/react @types/node npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p npm install @radix-ui/react-icons lucide-react class-variance-authority tailwind-variants npm install recharts npm install clsx npm install axios
 
-After all this run the server i.e. run main.py(backend) do "cd frontend" npm run dev
+After all this run the server i.e. run main.py(backend) by using python main.py in terminal
+After this ,do "cd frontend" in terminal and then do npm run dev
+
+Note:
+All the required modules and libraries are there in requirements.txt 
+The instructions are also given in setup.txt
+The required python version is given in .python-version file 
+The required .env components are given in the .env file 
+Proc and apt.txt files are also provided for deployment 
+There is test_doc_create.py file for creating different types of files like .pdf ,.word etc. for tesasting the website 
+Some sample test files are present in medvault_test_files folder
+Backend Deployment is done on Render and the link is provides in deployed.txt
+Frontend Deployment is done on Vercel and link is given below 
 
 Deployed Version : Go to : https://medvault-medical-privacy-protection-pipeline-final-adm7pemqz.vercel.app/
 
