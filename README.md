@@ -25,7 +25,7 @@
 <div align="center">
 
 <a href="https://medvault-medical-privacy-protection-pipeline-final-adm7pemqz.vercel.app/">
-  <img src="./frontend/public/images/health-hero.png" alt="MedVault visual preview" width="900" />
+  <img src="./frontend/public/images/medvault-readme-preview.png" alt="MedVault medical document privacy preview" width="900" />
 </a>
 
 <br/>
