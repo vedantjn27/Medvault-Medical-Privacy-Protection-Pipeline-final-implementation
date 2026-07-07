@@ -4,7 +4,7 @@
 
 [![Back to README](https://img.shields.io/badge/←_Back_to_README-MedVault-00D4FF?style=for-the-badge)](./README.md)
 [![Live Demo](https://img.shields.io/badge/🚀_Skip_Setup-Use_Live_Demo-00C853?style=for-the-badge)](https://medvault-medical-privacy-protection-pipeline-final-adm7pemqz.vercel.app/)
-
+ 
 </div>
 
 ---
